@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BA BA REEBA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ========== HERO ========== -->
+<section id="home" class="hero">
+  <video class="hero__video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1600&q=80">
+    <source src="" type="video/mp4" />
+  </video>
+  <!-- fallback bg image shown when video can't play -->
+  <div class="hero__video-fallback"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__gradient"></div>
+
+  <!-- Header / Nav -->
+  <header class="hero__header">
+    <div class="hero__header-inner">
+      <a href="/" class="hero__logo-link" aria-label="BA BA REEBA home">
+        <img src="https://i.imgur.com/5eFXnbQ.png" alt="" class="hero__logo-img" id="headerLogo"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+        <span class="hero__logo-fallback" style="display:none">BBR</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hero__nav" id="desktopNav" aria-label="Primary">
+        <ul class="hero__nav-list" id="desktopNavList">
+          <li><a href="#home" class="hero__nav-link">HOME</a></li>
+          <li><a href="#menu" class="hero__nav-link">MENU</a></li>
+          <li><a href="#reservation" class="hero__nav-link">RESERVATION</a></li>
+          <li><a href="#gallery" class="hero__nav-link">GALLERY</a></li>
+          <li><a href="#career" class="hero__nav-link">CAREER</a></li>
+          <li><a href="#contact" class="hero__nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero__header-right">
+        <!-- Tablet partial nav -->
+        <nav class="hero__nav-tablet" aria-label="Primary tablet">
+          <a href="#home" class="hero__nav-link">HOME</a>
+          <a href="#menu" class="hero__nav-link">MENU</a>
+          <a href="#reservation" class="hero__nav-link">RESERVATION</a>
+        </nav>
+        <!-- Menu icon -->
+        <button class="menu-icon" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <span class="menu-icon__grid" id="menuGrid">
+            <span></span><span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <ul class="menu-overlay__list">
+      <li><a href="#home" class="menu-overlay__link">HOME</a></li>
+      <li><a href="#menu" class="menu-overlay__link">MENU</a></li>
+      <li><a href="#reservation" class="menu-overlay__link">RESERVATION</a></li>
+      <li><a href="#gallery" class="menu-overlay__link">GALLERY</a></li>
+      <li><a href="#career" class="menu-overlay__link">CAREER</a></li>
+      <li><a href="#contact" class="menu-overlay__link">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Center Content -->
+  <div class="hero__content">
+    <div class="hero__logo-wrap" aria-label="BA BA REEBA">
+      <img src="https://static.vecteezy.com/system/resources/previews/047/530/610/non_2x/coffee-logo-in-flat-design-style-graphic-free-png.png" alt="" class="hero__center-logo hero__center-logo--white" />
+      <img src="https://static.vecteezy.com/system/resources/previews/047/530/610/non_2x/coffee-logo-in-flat-design-style-graphic-free-png.png" alt="BA BA REEBA" class="hero__center-logo hero__center-logo--gold" />
+    </div>
+    <h1 class="hero__title">BABA REEBA</h1>
+    <p class="hero__sub">
+      <span class="hero__sub-line">THIS IS FOOD THAT MOVES YOU</span>
+      <span class="hero__sub-line hero__sub-line--dim">TO TASTE, TO TAP, TO TUNE IN</span>
+    </p>
+  </div>
+
+  <!-- TAP button bottom-left -->
+  <a href="#tap" class="hero__tap" aria-label="Tap">TAP</a>
+
+  <!-- Scroll badge bottom-right -->
+  <div class="hero__scroll-badge-wrap">
+    <a href="#menu" class="hero__scroll-badge" aria-label="Scroll to explore">
+      <svg viewBox="0 0 120 120" class="hero__scroll-badge-svg" aria-hidden="true">
+        <defs>
+          <path id="heroScrollCircle" d="M 60,60 m -48,0 a 48,48 0 1,1 96,0 a 48,48 0 1,1 -96,0" fill="none"/>
+        </defs>
+        <text fill="white" font-size="9.5" font-family="Montserrat, sans-serif" letter-spacing="2.5">
+          <textPath href="#heroScrollCircle" startOffset="0%">EXPLORE • SCROLL • DISCOVER • SCROLL • EXPLORE •</textPath>
+        </text>
+      </svg>
+      <span class="hero__scroll-arrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M12 5v14M6 13l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section id="about" class="about">
+
+  <!-- Marquee -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-copy">
+        <span class="marquee-text">MUSIC MAKES MY HEART GO BA-BA-REEBA <span class="marquee-dot">•</span></span>
+        <span class="marquee-text">MUSIC MAKES MY HEART GO BA-BA-REEBA <span class="marquee-dot">•</span></span>
+        <span class="marquee-text">MUSIC MAKES MY HEART GO BA-BA-REEBA <span class="marquee-dot">•</span></span>
+      </div>
+      <div class="marquee-copy" aria-hidden="true">
+        <span class="marquee-text">MUSIC MAKES MY HEART GO BA-BA-REEBA <span class="marquee-dot">•</span></span>
+        <span class="marquee-text">MUSIC MAKES MY HEART GO BA-BA-REEBA <span class="marquee-dot">•</span></span>
+        <span class="marquee-text">MUSIC MAKES MY HEART GO BA-BA-REEBA <span class="marquee-dot">•</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main about grid -->
+  <div class="about__inner" id="aboutInner">
+    <div class="about__grid">
+
+      <!-- Left image stack (desktop) -->
+      <div class="about__side about__side--left" id="aboutLeft">
+        <div class="img-stack img-stack--left">
+          <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=400&h=560&auto=format&fit=crop&q=80"
+               alt="" class="img-stack__back img-stack__back--left" id="leftBack1" />
+          <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400&h=560&auto=format&fit=crop&q=80"
+               alt="" class="img-stack__front img-stack__front--left" id="leftFront1" />
+        </div>
+      </div>
+
+      <!-- Center content -->
+      <div class="about__center" id="aboutCenter">
+        <img src="https://i.imgur.com/5eFXnbQ.png" alt="BA BA REEBA"
+             class="about__logo"
+             onerror="this.style.opacity='0'" />
+        <h2 class="about__title">BA BA REEBA</h2>
+        <p class="about__tagline">isn't just a bar, it's a vault for those who live with intention.</p>
+        <p class="about__body">
+          Every pour, every playlist, every piece of worn-in furniture is chosen with care.
+          We're not about the noise or the rush we're about presence. The kind that lingers
+          in a well-crafted drink, a meaningful pause, or a late-night conversation that stays with you.
+        </p>
+        <a href="#about" class="about__cta">CURIOUS ABOUT US?</a>
+      </div>
+
+      <!-- Right image stack (desktop) -->
+      <div class="about__side about__side--right" id="aboutRight">
+        <div class="img-stack img-stack--right">
+          <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?w=400&h=560&auto=format&fit=crop&q=80"
+               alt="" class="img-stack__back img-stack__back--right" id="rightBack1" />
+          <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=400&h=560&auto=format&fit=crop&q=80"
+               alt="" class="img-stack__front img-stack__front--right" id="rightFront1" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile image stacks (shown below center on small screens) -->
+    <div class="about__mobile-stacks">
+      <div class="about__mobile-side" id="mobileLeft">
+        <div class="img-stack img-stack--left">
+          <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=400&h=560&auto=format&fit=crop&q=80"
+               alt="" class="img-stack__back img-stack__back--left" />
+          <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400&h=560&auto=format&fit=crop&q=80"
+               alt="" class="img-stack__front img-stack__front--left" />
+        </div>
+      </div>
+      <div class="about__mobile-side" id="mobileRight">
+        <div class="img-stack img-stack--right">
+          <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?w=400&h=560&auto=format&fit=crop&q=80"
+               alt="" class="img-stack__back img-stack__back--right" />
+          <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=400&h=560&auto=format&fit=crop&q=80"
+               alt="" class="img-stack__front img-stack__front--right" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== GALLERY ========== -->
+<section id="gallery" class="gallery">
+  <div class="gallery__scroll-container" id="galleryScroll">
+    <div class="gallery__sticky">
+      <div class="gallery__inner">
+
+        <!-- Orbital rings SVG -->
+        <svg class="gallery__orbital" viewBox="-40 -40 480 480" overflow="visible" aria-hidden="true">
+          <circle cx="200" cy="200" r="70"  fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.6"/>
+          <circle cx="200" cy="200" r="110" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.6"/>
+          <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.6"/>
+          <circle cx="200" cy="200" r="190" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.6"/>
+          <circle cx="200" cy="200" r="220" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.6"/>
+        </svg>
+
+        <!-- Gallery images (positioned absolutely, animated by JS) -->
+        <div class="gallery__images" id="galleryImages">
+          <div class="gallery__img-wrap" data-x="460"  data-y="-185" data-z="6"  data-rotate="-4">
+            <img src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="gallery__img" loading="lazy"/>
+          </div>
+          <div class="gallery__img-wrap" data-x="-260" data-y="50"   data-z="1"  data-rotate="-10">
+            <img src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="gallery__img" loading="lazy"/>
+          </div>
+          <div class="gallery__img-wrap" data-x="-470" data-y="55"   data-z="8"  data-rotate="3">
+            <img src="https://images.unsplash.com/photo-1762237855157-eb0ba25e39d4?q=80&w=402&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="gallery__img" loading="lazy"/>
+          </div>
+          <div class="gallery__img-wrap" data-x="175"  data-y="105"  data-z="2"  data-rotate="15">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=220&h=320&auto=format&fit=crop&q=75" alt="" class="gallery__img" loading="lazy"/>
+          </div>
+          <div class="gallery__img-wrap" data-x="-500" data-y="-255" data-z="20" data-rotate="-25">
+            <img src="https://plus.unsplash.com/premium_photo-1742829736744-ef33800b475d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="gallery__img" loading="lazy"/>
+          </div>
+          <div class="gallery__img-wrap" data-x="190"  data-y="-295" data-z="7"  data-rotate="30">
+            <img src="https://images.unsplash.com/photo-1762237855157-eb0ba25e39d4?q=80&w=402&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="gallery__img" loading="lazy"/>
+          </div>
+          <div class="gallery__img-wrap" data-x="-320" data-y="-375" data-z="9"  data-rotate="6">
+            <img src="https://images.unsplash.com/photo-1678967630352-c40c4b2960b8?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="gallery__img" loading="lazy"/>
+          </div>
+        </div>
+
+        <!-- Center text overlay -->
+        <div class="gallery__text">
+          <p class="gallery__text-main">Good music. Great crowd. Perfect vibes.</p>
+          <p class="gallery__text-sub">Just a glimpse of what awaits you inside</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EXPERIENCE ========== -->
+<section id="experience" class="experience">
+  <div class="experience__item" data-index="0">
+    <span class="experience__side-text experience__side-text--left">Food</span>
+    <h2 class="experience__title">FOOD</h2>
+    <span class="experience__side-text experience__side-text--right">Food</span>
+  </div>
+  <div class="experience__item" data-index="1">
+    <span class="experience__side-text experience__side-text--left">Cocktails</span>
+    <h2 class="experience__title">COCKTAILS</h2>
+    <span class="experience__side-text experience__side-text--right">Cocktails</span>
+  </div>
+  <div class="experience__item" data-index="2">
+    <span class="experience__side-text experience__side-text--left">Ambiance</span>
+    <h2 class="experience__title">AMBIANCE</h2>
+    <span class="experience__side-text experience__side-text--right">Ambiance</span>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer id="contact" class="footer" id="footerEl">
+  <div class="footer__inner">
+    <!-- Logo -->
+    <a href="/" class="footer__logo-link" aria-label="BA BA REEBA home">
+      <img src="https://i.imgur.com/5eFXnbQ.png" alt=""
+           class="footer__logo footer__logo--white"
+           onerror="this.style.display='none'"/>
+      <img src="https://i.imgur.com/5eFXnbQ.png" alt="BA BA REEBA"
+           class="footer__logo footer__logo--gold"
+           onerror="this.style.display='none'"/>
+    </a>
+
+    <h2 class="footer__title">BA BA REEBA</h2>
+
+    <nav class="footer__nav" aria-label="Footer">
+      <ul class="footer__nav-row">
+        <li><a href="#home" class="footer__nav-link">HOME</a></li>
+        <li><a href="#menu" class="footer__nav-link">MENU</a></li>
+        <li><a href="#gallery" class="footer__nav-link">GALLERY</a></li>
+        <li><a href="#career" class="footer__nav-link">CAREER</a></li>
+      </ul>
+      <ul class="footer__nav-row">
+        <li><a href="#contact" class="footer__nav-link">CONTACT</a></li>
+        <li><a href="#reservation" class="footer__nav-link">RESERVATION</a></li>
+      </ul>
+    </nav>
+
+    <!-- Social icons -->
+    <div class="footer__socials">
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <a href="https://wa.me" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer__social-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+          <path d="M12 2a10 10 0 0 0-8.7 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Z"/>
+          <path d="M9.5 9.5c.4 2 2.6 3.6 4.5 3.1.5-.1.9-.5 1.1-.9l.4-.9c0-.2-.1-.4-.3-.5l-1.1-.5c-.2-.1-.4 0-.5.1l-.6.7c-.1.1-.3.1-.5 0-.8-.4-1.5-1.1-1.9-1.9-.1-.2 0-.4.1-.5l.7-.6c.1-.1.2-.3.1-.5l-.5-1.1c-.1-.2-.3-.3-.5-.3l-.9.4c-.4.2-.8.6-.9 1.1-.5 1.9 1.1 4.1 3.1 4.5Z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer__divider"></div>
+
+    <p class="footer__copy">© 2025 BA BA REEBA. ALL RIGHTS RESERVED.</p>
+    <p class="footer__designed">
+      <span>Designed by</span>
+      <span class="footer__pts"><a href="https://www.pawartechnologyservices.com/" target="_blank">PTS</a></span>
+    </p>
+
+    <div class="footer__legal">
+      <a href="#privacy" class="footer__legal-link">Privacy &amp; Policy</a>
+      <a href="#terms" class="footer__legal-link">Terms of Services</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
